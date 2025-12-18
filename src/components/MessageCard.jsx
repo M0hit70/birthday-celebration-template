@@ -13,19 +13,17 @@ function MessageCard({ isActive }) {
   const curtainHintRef = useRef(null);
   const messageContentRef = useRef(null);
 
-  const message = `[Recipient Name],
+  const message = `[Yashasvi],
 
-Your personalized birthday message goes here.
+Happy Birthday Yashasvi —Yashu 🎉😄
+Another year unlocked, and honestly, you’re doing just fine. Stay the same fun, chill, slightly crazy person you are — it suits you perfectly. Also, zero academic pressure (and honestly, in general too). Just chill, go with the flow, and trust that things will fall into place when they’re meant to. Everything happens for a reason, and usually for the good — even if it doesn’t make sense right away 👀✨
+Today is strictly for cake, laughs, and feeling special. Stress is not invited. Have a really, really good one 🎂💖
 
-You can write multiple paragraphs to express your feelings,
-share memories, and make this special day even more memorable.
+You’re the only person I can share everything with — no second thoughts, no overthinking, just saying whatever comes to my mind. You’re always there for me whenever I break down, and that honestly means a lot. Because of you, I’m now obsessed with Banaras and badly want to take a trip there someday. I still miss those group chat days, the long calls, all of it — but yeah, that’s just life. People come and go, and we learn to adapt. Nothing new, just how it is.
+Bakchodi aside, I’m really grateful for you🧡
 
-This template supports multiple lines and formatting,
-so feel free to customize it completely to fit your style.
-
-Happy Birthday! 🎉
-
-— [Your Name]`;
+Wishing you a year full of peace, good health, confidence, and lots of moments that make you smile. May this year be kind to you and bring everything you truly deserve. Have the best birthday, Yashu 💫🎉
+— [MHU MHU]`;
 
   // Handle page transitions
   useEffect(() => {
@@ -176,9 +174,8 @@ Happy Birthday! 🎉
         <div className="curtain-rod"></div>
 
         <div
-          className={`curtain-wrapper ${
-            curtainsOpened ? "opened opening" : ""
-          }`}
+          className={`curtain-wrapper ${curtainsOpened ? "opened opening" : ""
+            }`}
           onClick={handleOpenCurtains}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
